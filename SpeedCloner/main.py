@@ -4,9 +4,8 @@ import shutil
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
-watched_folder = rf"PATH\\TO\\THE\\FOLDER\\YOU\\WANT\\TO\\CLONE\\"
-
-clone_destination = "Results"
+watched_folder = input("Target path: ")
+clone_destination = rf"Results"
 
 class Watcher:
     def __init__(self, watched_folder, clone_destination):
